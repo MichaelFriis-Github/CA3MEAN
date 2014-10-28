@@ -1,15 +1,11 @@
 var express = require('express');
 var fs = require('fs');
-var mongoose = require ("mongoose");
+var dbconnect = require('../database/dbconnect');
 var model = require('../database/model');
-var db = mongoose.connect("mongodb://test:test@ds047440.mongolab.com:47440/ca");
-db.connection.once('open', function() {
-    console.log("Connected");
-});
-db.connection.on('error', function(err) {
-    console.log(err);
-    console.log('Did you remember to start MongodDb?');
-});
+
+
+
+dbconnect.connect();
 
 
 //var jokes = require("../model/jokes");

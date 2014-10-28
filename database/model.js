@@ -96,3 +96,4 @@ function getAllCategories(callback) {
 }
 
 exports.OrderModel = mongoose.model('orders', OrderSchema);
+
