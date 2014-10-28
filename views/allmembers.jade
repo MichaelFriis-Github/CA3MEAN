@@ -1,7 +1,32 @@
-
 extends layout
 block content
     h2 All Members
     ol
-        each s in members
-            li= s
+        div.container
+            div.col-md-12
+                table.table.table-striped.table-hover.table-bordered
+                    tr
+                        th id
+                        th companyName
+                        th contactName
+                        th contactTitle
+                        th address
+                        th city
+                        th region
+                        th postalCode
+                        th country
+                        th phone
+                        th fax
+            each s in members
+                tr
+                    td= s.id
+                    td= s.companyName
+                    td= s.contactName
+                    td= s.contactTitle
+                    td= s.address
+                    td= s.city
+                    td= s.region
+                    td= s.postalCode
+                    td= s.country
+                    td= s.phone
+                    td= s.fax
