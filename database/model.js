@@ -86,14 +86,13 @@ var OrderSchema = mongoose.Schema({
 });
 
 
-function getAllCategories(callback) {
-    Categories.find({}, function (err, categories) {
+exports.OrderModel = mongoose.model('orders', OrderSchema);
+
+function getAllOrders(callback) {
+    Orders.find({}, function (err, orders) {
         if (err) {
             return callback(err);
         }
-        callback(null,categories);
+        callback(null,orders);
     });
 }
-
-exports.OrderModel = mongoose.model('orders', OrderSchema);
-
