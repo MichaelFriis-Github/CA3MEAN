@@ -2,3 +2,37 @@
    Created by Michael on 29-10-2014.
 
 h3 #{orderdetail}
+
+
+    extends layout
+    block content
+        h2 Order Detail
+        ol
+            div.container
+                div.col-md-12
+                    table.table.table-striped.table-hover.table-bordered
+                        thead
+                            div.btn-group
+                                button#Black(
+                                type='submit'
+                                style='color: green; background-color: pink;'
+                                onclick="location.href='http://localhost:3000'"
+                                ) Back
+                                tr
+                                    th OrderId
+                                    th ProductId
+                                    th UnitPrice
+                                    th Quantity
+                                    th Discount
+                                    th ID
+                            each s in orderdetail
+                                tr
+
+                                        td= s.orderId
+                                        td= s.productId
+                                        td= s.unitPrice
+                                        td= s.quantity
+                                        td= s.discount
+                                        td= s._id
+                                        td(style='text-align: center;')
+                                        span.glyphicon.glyphicon-remove
