@@ -24,5 +24,17 @@ router.get('/orders', function (req, res) {
     });
 
 });
-
+router.get('/orderdetail/:id', function (req, res){
+    var id = req.params.id;
+    model.DetailsModel.find({orderId:id}, function(err, orderID){
+        if (err)
+        {
+            return callback(err);
+        }
+        else
+        {
+            res.render('orderdetail', {orderdetail: orderID});
+        }
+    });
+});
 module.exports = router;
