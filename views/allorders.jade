@@ -9,10 +9,9 @@ block content
                         div.btn-group
                             button#Black(
                             type='submit'
-                            value='Back'
-                            style='width: 25px; height: 25px; background-color: black;'
+                            style='color: green; background-color: pink;'
                             onclick="location.href='http://localhost:3000'"
-                            )
+                            ) Back
                             tr
                                 th ID
                                 th Date
@@ -26,5 +25,5 @@ block content
                                 td= s.orderDate
                                 td= s.shipName
                                 td= s.shipAddress
-                                td= (align = '')
+                                td(style='text-align: center;')
                                     span.glyphicon.glyphicon-remove
