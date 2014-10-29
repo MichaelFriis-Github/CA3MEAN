@@ -26,4 +26,6 @@ block content
                                 td= s.shipName
                                 td= s.shipAddress
                                 td(style='text-align: center;')
-                                    span.glyphicon.glyphicon-remove
+                                    a(href='./partials/orders/delete/' + s.id) 
+                                        span.glyphicon.glyphicon-remove
+                                        

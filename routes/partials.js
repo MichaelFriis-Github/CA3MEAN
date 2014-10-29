@@ -37,4 +37,20 @@ router.get('/orderdetail/:id', function (req, res){
         }
     });
 });
+
+router.get('/orders/delete/:id', function (req, res){
+    var id = req.params.id;
+    model.OrderModel.findByIdAndRemove({_id:id}, function(err, docs){
+        if (err)
+        {
+            return callback(err);
+        }
+        else
+        {
+            res.render('deletion.ejs');
+        }
+    });
+});
+
+
 module.exports = router;
