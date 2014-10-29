@@ -5,14 +5,17 @@ block content
         div.container
             div.col-md-12
                 table.table.table-striped.table-hover.table-bordered
-                    tr
-                        th ID
-                        th Date
-                        th Name
-                        th Address
-                    each s in orders
+                    thead
                         tr
-                            td= s.id
-                            td= s.orderDate
-                            td= s.shipName
-                            td= s.shipAddress
+                            th ID
+                            th Name
+                            th Address
+                        each s in orders
+                            tr
+                                td
+                                    a(href='./orderdetails/' + s.id) #{s.id}
+                                td= s.orderDate
+                                td= s.shipName
+                                td= s.shipAddress
+
+
