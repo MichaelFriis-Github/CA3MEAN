@@ -21,7 +21,7 @@ block content
                         each s in orders
                             tr
                                 td
-                                    a(href='./orderdetails/' + s.id) #{s.id}
+                                    a(href='./partials/orderdetail/' + s.id) #{s.id}
                                 td= s.orderDate
                                 td= s.shipName
                                 td= s.shipAddress
