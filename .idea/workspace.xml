@@ -36,8 +36,8 @@
       <file leaf-file-name="orderdetail.jade" pinned="false" current="true" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/views/orderdetail.jade">
           <provider selected="true" editor-type-id="text-editor">
-            <state vertical-scroll-proportion="0.8467433" vertical-offset="153" max-vertical-offset="731">
-              <caret line="35" column="49" selection-start-line="35" selection-start-column="49" selection-end-line="35" selection-end-column="49" />
+            <state vertical-scroll-proportion="0.77203065" vertical-offset="107" max-vertical-offset="629">
+              <caret line="30" column="0" selection-start-line="30" selection-start-column="0" selection-end-line="30" selection-end-column="0" />
               <folding />
             </state>
           </provider>
@@ -47,7 +47,7 @@
         <entry file="file://$PROJECT_DIR$/views/allorders.jade">
           <provider selected="true" editor-type-id="text-editor">
             <state vertical-scroll-proportion="0.0" vertical-offset="0" max-vertical-offset="578">
-              <caret line="2" column="17" selection-start-line="2" selection-start-column="17" selection-end-line="2" selection-end-column="17" />
+              <caret line="0" column="0" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="14" />
               <folding />
             </state>
           </provider>
@@ -313,15 +313,15 @@
     <entry file="file://$PROJECT_DIR$/views/allorders.jade">
       <provider selected="true" editor-type-id="text-editor">
         <state vertical-scroll-proportion="0.0" vertical-offset="0" max-vertical-offset="578">
-          <caret line="2" column="17" selection-start-line="2" selection-start-column="17" selection-end-line="2" selection-end-column="17" />
+          <caret line="0" column="0" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="14" />
           <folding />
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/views/orderdetail.jade">
       <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.8467433" vertical-offset="153" max-vertical-offset="731">
-          <caret line="35" column="49" selection-start-line="35" selection-start-column="49" selection-end-line="35" selection-end-column="49" />
+        <state vertical-scroll-proportion="0.77203065" vertical-offset="107" max-vertical-offset="629">
+          <caret line="30" column="0" selection-start-line="30" selection-start-column="0" selection-end-line="30" selection-end-column="0" />
           <folding />
         </state>
       </provider>
