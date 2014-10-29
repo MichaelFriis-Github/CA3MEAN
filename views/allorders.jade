@@ -6,16 +6,19 @@ block content
             div.col-md-12
                 table.table.table-striped.table-hover.table-bordered
                     thead
-                        button#Black(
-                        type='submit'
-                        value='Back'
-                        style='width: 25px; height: 25px; background-color: black;'
-                        onclick="location.href='http://localhost:3000'"
-                        )
-                        tr
-                            th ID
-                            th Name
-                            th Address
+                        div.btn-group
+                            button#Black(
+                            type='submit'
+                            value='Back'
+                            style='width: 25px; height: 25px; background-color: black;'
+                            onclick="location.href='http://localhost:3000'"
+                            )
+                            tr
+                                th ID
+                                th Date
+                                th Name
+                                th Address
+                                th Delete
                         each s in orders
                             tr
                                 td
@@ -23,5 +26,5 @@ block content
                                 td= s.orderDate
                                 td= s.shipName
                                 td= s.shipAddress
-
-
+                                td= (align = '')
+                                    span.glyphicon.glyphicon-remove
