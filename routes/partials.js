@@ -24,6 +24,18 @@ router.get('/orders', function (req, res) {
     });
 
 });
+
+router.get('/products', function (req, res) {
+    model.ProductModel.find({}, function (err, products) {
+        if (err) {
+            return callback(err);
+        }
+        res.render('products', {products: products});
+    });
+
+});
+
+
 router.get('/orderdetail/:id', function (req, res){
     var id = req.params.id;
     model.DetailsModel.find({orderId:id}, function(err, orderID){
