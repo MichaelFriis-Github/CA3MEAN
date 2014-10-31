@@ -1,0 +1,31 @@
+extends layout
+block content
+    h2 All Orders
+    ol
+        div.container
+            div.col-md-12
+                table.table.table-striped.table-hover.table-bordered
+                    thead
+                        div.btn-group
+                            button#Black(
+                            type='submit'
+                            style='color: green; background-color: pink;'
+                            onclick="location.href='http://localhost:3000'"
+                            ) Back
+                            tr
+                                th Name
+                                th Address
+                        each s in orders
+                            tr
+                                td= s.shipName
+                                td= s.shipAddress
+
+                form(action='',method='post')
+                    div
+                        label(for='name') Name
+                            input(id='name',type='text',value='',placeholder='',name='name')
+                    div
+                        label(for='password') Address
+                            input(id='address',type='text',value='',placeholder='',name='address')
+                    div
+                        input(type='submit',value='Change',data-transition='fade', data-theme='c')
