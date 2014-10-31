@@ -6,12 +6,6 @@ block content
             div.col-md-12
                 table.table.table-striped.table-hover.table-bordered
                     thead
-                        div.btn-group
-                            button#Black(
-                            type='submit'
-                            style='color: green; background-color: pink;'
-                            onclick="location.href='http://localhost:3000'"
-                            ) Back
                             tr
                                 th Name
                                 th Address
@@ -29,3 +23,5 @@ block content
                             input(id='address',type='text',value='',placeholder='',name='address')
                     div
                         input(type='submit',value='Change',data-transition='fade', data-theme='c')
+
+        a.btn.btn-large.btn-success(href="/../", role="button", data-toggle="modal") Go to Frontpage    
