@@ -11,6 +11,7 @@ block content
                             th Date
                             th Name
                             th Address
+                            th Edit
                             th Delete
                     each s in orders
                         tr
@@ -19,6 +20,9 @@ block content
                             td= s.orderDate
                             td= s.shipName
                             td= s.shipAddress
+                            td(style='text-align: center;')
+                                a(href='./partials/edit/' +s.id)
+                                    span.glyphicon.glyphicon-pencil
                             td(style='text-align: center;')
                                 a(href='./partials/orders/delete/' + s.id) 
                                     span.glyphicon.glyphicon-remove

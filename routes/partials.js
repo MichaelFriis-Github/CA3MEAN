@@ -101,5 +101,29 @@ router.get('/orders/delete/:id', function (req, res){
     });
 });
 
+router.get('/edit/:id', function (req, res) {
+    var id = req.params.id;
+    model.OrderModel.find({_id:id}, function(err, orderID) {
+        if (err) {
+            return callback(err);
+        } else {
+            res.render('edit', {orders: orderID});
+        }
+    });
+});
+
+router.post('/edit/:id', function (req, res) {
+    var id = req.params.id;
+    model.OrderModel.update({_id:id}, {
+        $set: {
+            shipName: req.body.name.toString(),
+            shipAddress: req.body.address.toString()
+        }
+    }, {multi: true}).exec();
+    res.render('deletion.ejs');
+
+});
+
+
 
 module.exports = router;
