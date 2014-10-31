@@ -6,8 +6,9 @@
     <meta name="viewport" content="width=device-width, initial-scale=1">
     <title>Ca3</title>
     <!-- Bootstrap -->
-    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.2.0/css/bootstrap.min.css">
-    <link rel="stylesheet" href="stylesheets/style.css">
+    <link href="css/bootstrap.min.css" rel="stylesheet">
+
+    <link href="css/small-business.css" rel="stylesheet">
     <!-- HTML5 Shim and Respond.js IE8 support of HTML5 elements and media queries -->
     <!-- WARNING: Respond.js doesn't work if you view the page via file:// -->
     <!--[if lt IE 9]>
@@ -16,51 +17,125 @@
     <![endif]-->
 </head>
 <body>
-<div class="container">
-    <!-- Static navbar -->
-    <div class="navbar navbar-default" role="navigation">
-        <div class="container-fluid">
+ <!-- Navigation -->
+    <nav class="navbar navbar-inverse navbar-fixed-top" role="navigation">
+        <div class="container">
+            <!-- Brand and toggle get grouped for better mobile display -->
             <div class="navbar-header">
-                <button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target=".navbar-collapse">
+                <button type="button" class="navbar-toggle" data-toggle="collapse" data-target="#bs-example-navbar-collapse-1">
                     <span class="sr-only">Toggle navigation</span>
                     <span class="icon-bar"></span>
                     <span class="icon-bar"></span>
                     <span class="icon-bar"></span>
                 </button>
-                    <a class="navbar-brand useajax" href="partials/home">Ca3</a>
+
             </div>
-            <div class="navbar-collapse collapse">
+            <!-- Collect the nav links, forms, and other content for toggling -->
+            <div class="collapse navbar-collapse" id="bs-example-navbar-collapse-1">
                 <ul class="nav navbar-nav">
-                    <li class="active"><a class="useajax" href="partials/home">Home</a></li>
-
-                    <!-- EJS Code to display menu items depending on whether you are logged in or not -->
-
-                    <% if((typeof user == 'undefined')) {%>
-                      <li><a class="useajax" href="partials/orders">Allorders</a></li>
-                    <% }%>
-
-                    <% if(!(typeof user == 'undefined')) {%>
-                    <!--<li><a class="useajax" href="partials/logoff">Log out</a></li>-->
-                      <li><a href="partials/home" class="useajax">Add joke</a></li>
-                      <li><a href="partials/home" class="useajax">Latest joke</a></li>
-                      <li><a href="partials/home" class="useajax">All Jokes</a></li>
-                    <% } %>
+                    <li>
+                        <a class="useajax" href="/">Home</a>
+                    </li>
+                    <li>
+                        <a class="useajax" href="partials/orders">Orders</a>
+                    </li>
+                    <li>
+                        <a class="useajax" href="partials/categories">Categories</a>
+                    </li>
+                    <li>
+                        <a class="useajax" href="partials/products">Products</a>
+                    </li>
+                    <li>
+                        <a class="useajax" href="partials/employees">Employees</a>
+                   </li>
+                   <li>
+                        <a class="useajax" href="partials/documentation">Documentation</a>
+                   </li>
 
                 </ul>
-                </div><!--/.nav-collapse -->
-        </div><!--/.container-fluid -->
-    </div>
+            </div>
+            <!-- /.navbar-collapse -->
+        </div>
+        <!-- /.container -->
+    </nav>
     <!-- This is where your partials will be inserted-->
-    <div >
-        <div id="content">content</div>
-    </div>
 </div> <!-- /container -->
+
+    <!-- Page Content -->
+    <div class="container">
+        <div id="content">
+        <!-- Heading Row -->
+        <div class="row">
+            <div class="col-md-8">
+                <img class="img-responsive img-rounded" src="images/HackingDemocracy.jpg" alt="">
+            </div>
+            <!-- /.col-md-8 -->
+            <div class="col-md-4">
+                <h1>Supergruppen </h1>
+                <p>There is a concept called the MEAN stack (Mongo-Express-Angular-Node) that refers to applications programed with these tools/frameworks. <p>
+                <a class="btn btn-danger btn-lg useajax" href="/partials/orders">Find Orders</a>
+            </div>
+            <!-- /.col-md-4 -->
+        </div>
+        <!-- /.row -->
+
+        <hr>
+
+        <!-- Call to Action Well -->
+        <div class="row">
+            <div class="col-lg-12">
+                <div class="well text-center">
+                   <a href="https://github.com/MichaelFriis-Github/CA3MEAN" target="_blank">Link to the Github.</a>
+                </div>
+            </div>
+            <!-- /.col-lg-12 -->
+        </div>
+        <!-- /.row -->
+
+        <!-- Content Row -->
+        <div class="row">
+            <div class="col-md-4">
+                <h2>Assignment</h2>
+                <p>In this assignment we were asked to create an application, which is using modern technologies such as Mongo, Express and Node.js. The smart man probably refers this to a MEAN-application, but the A = Angular is not a part of the project.</p>
+                <a class="btn btn-default" href="includes/ca_assignment.pdf" target="_blank">Read more</a>
+            </div>
+            <!-- /.col-md-4 -->
+            <div class="col-md-4">
+                <h2>Documentation</h2>
+                <p>The entire project has been documented. This includes patterns, what each member did, a description of the implemented desgin both front- and backend. </p>
+                <a class="btn btn-default" href="#">More Info</a>
+            </div>
+            <!-- /.col-md-4 -->
+            <div class="col-md-4">
+                <h2>Members: </h2>
+                <ul>
+                    <li> <a href="https://github.com/FrederikOlesen" target="_blank"> Frederik Olesen</li></a> 
+                    <li> <a href="https://github.com/MichaelFriis-Github" target="_blank"> Michael Friis </li> </a>
+                    <li> <a href="https://github.com/majep113" target="_blank" > Mads Jeppesen </li> </a>
+                    <li> <a href="https://github.com/fogtoo" target="_blank"> Sune Ternstrøm </li> </a>
+            </div>
+            <!-- /.col-md-4 -->
+        </div>
+        <!-- /.row -->
+
+        <!-- Footer -->
+        <footer>
+            <div class="row">
+                <div class="col-lg-12">
+                    <p>Copyright &copy Supergruppen 2014</p>
+                </div>
+            </div>
+        </footer>
+
+    </div>
+</div>
+    <!-- /.container -->
 <!-- jQuery (necessary for Bootstrap's JavaScript plugins) -->
 <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.1/jquery.min.js"></script>
 <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.2.0/js/bootstrap.min.js"></script>
 <script>
     $(document).ready(function(){
-        loadPartial("#content","/partials/home");
+        loadPartial("#content");
         $(".nav a").on("click", function(){
             $(".nav").find(".active").removeClass("active");
             $(this).parent().addClass("active");

@@ -1,0 +1,44 @@
+//
+   Created by Michael on 30-10-2014.
+extends layout
+block content
+    h2 All Employees
+    ol
+        div.container
+
+            div.col-md-12
+                table.table.table-striped.table-hover.table-bordered
+                    thead
+                            tr
+                                th ID
+                                th Lastname
+                                th Firstname
+                                th Title
+                                th Title Of Courtesy
+                                th Birtdate
+                                th Hiredate
+                                th Address
+                                th City
+                                th Region
+                                th Postalcode
+                                th Country
+                                th Homephone
+                                th Extension
+
+                        each s in employees
+                            tr
+                                td
+                                    a.useajax(href='./partials/categorydetail/' + s.id) #{s.id}
+                                    td= s.lastName
+                                    td= s.firstName
+                                    td= s.title
+                                    td= s.titleOfCourtesy
+                                    td= s.birthDate
+                                    td= s.hireDate
+                                    td= s.address
+                                    td= s.city
+                                    td= s.region
+                                    td= s.postalCode
+                                    td= s.country
+                                    td= s.homePhone
+                                    td= s.extension
