@@ -6,26 +6,20 @@ block content
             div.col-md-12
                 table.table.table-striped.table-hover.table-bordered
                     thead
-                        div.btn-group
-                            button#Black(
-                            type='submit'
-                            style='color: green; background-color: pink;'
-                            onclick="location.href='http://localhost:3000'"
-                            ) Back
-                            tr
-                                th ID
-                                th Date
-                                th Name
-                                th Address
-                                th Delete
-                        each s in orders
-                            tr
-                                td
-                                    a(href='./partials/orderdetail/' + s.id) #{s.id}
-                                td= s.orderDate
-                                td= s.shipName
-                                td= s.shipAddress
-                                td(style='text-align: center;')
-                                    a(href='./partials/orders/delete/' + s.id) 
-                                        span.glyphicon.glyphicon-remove
-                                        
+                        tr
+                            th ID
+                            th Date
+                            th Name
+                            th Address
+                            th Delete
+                    each s in orders
+                        tr
+                            td
+                                a(href='./partials/orderdetail/' + s.id) #{s.id}
+                            td= s.orderDate
+                            td= s.shipName
+                            td= s.shipAddress
+                            td(style='text-align: center;')
+                                a(href='./partials/orders/delete/' + s.id) 
+                                    span.glyphicon.glyphicon-remove
+                                    
