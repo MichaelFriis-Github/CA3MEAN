@@ -1,7 +1,7 @@
 var fs = require('fs');
 var mongoose = require('mongoose');
 var model = require('./model');
-var dbUrl = "mongodb://Adminuser:Admin123@ds033390.mongolab.com:33390/cafinal";
+var dbUrl = "mongodb://Admin:Admin123@ds063779.mongolab.com:63779/cathreedatabase";
 
 
 function readData(path) {

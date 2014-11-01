@@ -4,7 +4,7 @@
 var mongoose = require('mongoose');
 
 module.exports.connect = function () {
-    mongoose.connect("mongodb://Adminuser:Admin123@ds033390.mongolab.com:33390/cafinal");
+    mongoose.connect("mongodb://Admin:Admin123@ds063779.mongolab.com:63779/cathreedatabase");
 
     var db = mongoose.connection;
 
